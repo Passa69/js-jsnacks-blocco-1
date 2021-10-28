@@ -8,19 +8,19 @@
 
 
 const userPar1 = prompt("Scrivi qui la prima parola da confrontare: ");
-console.log(userPar1);
+// console.log(userPar1);
 const userPar2 = prompt("Scrivi qui la seconda parola da confrontare: ");
-console.log(userPar2);
+// console.log(userPar2);
 
 // confronto
 if (userPar1.length > userPar2.length) {
-    console.log(userPar1);
+    // console.log(userPar1);
 
-    document.getElementById("container").innerHTML = `${userPar1}`
+    document.getElementById("container").innerHTML += `${userPar1}`
     document.getElementById("container").innerHTML += `${userPar2}`
 } else (userPar1.length < userPar2.length); {
-    console.log(userPar2);
+    // console.log(userPar2);
 
-    document.getElementById("container").innerHTML = `${userPar2}`
+    document.getElementById("container").innerHTML += `${userPar2}`
     document.getElementById("container").innerHTML += `${userPar1}`
 } 
