@@ -7,13 +7,16 @@
 // 4. Stampo la somma
 
 
-let Num = "";
+let Num = [];
+let somm = 0;
 
 for (i = 0; i < 10; i++) {
     let userNum = parseInt(prompt("Inserisci un numero: "));
-    Num = (userNum[i]);
+    Num.push(userNum);
+    somm += Num[i];
 }
 
 console.log(Num);
+console.log(somm);
 
 // document.getElementById("container").innerHTML = ;
