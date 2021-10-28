@@ -13,6 +13,6 @@ if (userNum1 > userNum2) {
     console.log(userNum1);
 } else if (userNum1 < userNum2) {
     console.log(userNum2);
-} else (userNum1 === userNum2); {
+} else {
     console.log("Sono uguali!");
 }
