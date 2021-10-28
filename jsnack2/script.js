@@ -16,11 +16,12 @@ const userPar2 = prompt("Scrivi qui la seconda parola da confrontare: ");
 if (userPar1.length > userPar2.length) {
     // console.log(userPar1);
 
-    document.getElementById("container").innerHTML += `${userPar1}`
+    document.getElementById("container").innerHTML = `${userPar1}`
     document.getElementById("container").innerHTML += `${userPar2}`
-} else (userPar1.length < userPar2.length); {
+
+} else {
     // console.log(userPar2);
 
-    document.getElementById("container").innerHTML += `${userPar2}`
+    document.getElementById("container").innerHTML = `${userPar2}`
     document.getElementById("container").innerHTML += `${userPar1}`
 } 
