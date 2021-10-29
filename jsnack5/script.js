@@ -11,7 +11,7 @@ let Num = [];
 for (i = 0; i < 6; i++) {
     let userNum = parseInt(prompt("Inserisci un numero: "));
     
-    if (!(userNum % 2 === 0)) {
+    if (userNum % 2 !== 0) {
         Num.push(userNum);
     }
 }
