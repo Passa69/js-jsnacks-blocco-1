@@ -5,11 +5,23 @@
 // 3. creo un ciclo in cui aggiungo i numeri => for + push
 
 let arrNum = [];
-let Num = 0;
 
-for (i = 0; i < 50; i++) {
-     Num = Math.floor(Math.random() * 100) - 1;
-     arrNum.push(Num)
+while (arrNum.length < 50) {
+
+     let Num = Math.floor(Math.random() * 100) - 1;
+
+     let duplicati = false;
+
+     for (i = 0; i < arrNum.length; i++) {
+          if (Num === arrNum[i]) {
+               duplicati = true;
+          }
+     }
+
+     if (duplicati == false) {
+          arrNum.push(Num)
+     }
+     
 }
 
 console.log(arrNum);
